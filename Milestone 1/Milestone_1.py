@@ -2,7 +2,7 @@
 #I am asking thier hours and how much thier goal costs
 Hours_per_week = int(input("How much hours do you work a week?:"))
 Hourly_pay = float(input("how much are you paid per hour?: "))
-Goal = input("What do you want to buy?")
+Goal = input("What do you want to buy? ")
 Goal_price = float(input("how much does it cost?:"))
 
 #Calcuates and also automatcly rounds it
