@@ -1,2 +1,2 @@
-# Egor Dorodnyi Milestone 1
+# Egor Dorodnyi Milestones
 
