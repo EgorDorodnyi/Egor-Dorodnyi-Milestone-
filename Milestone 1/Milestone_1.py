@@ -1,4 +1,4 @@
-#this is my saving calulator, it tells you how much hours you need to work to buy your things
+#this is my saving calulator, it tells you how much weeks you need to work to buy your things
 #I am asking thier hours and how much thier goal costs
 Hours_per_week = int(input("How much hours do you work a week?:"))
 Hourly_pay = float(input("how much are you paid per hour?: "))
