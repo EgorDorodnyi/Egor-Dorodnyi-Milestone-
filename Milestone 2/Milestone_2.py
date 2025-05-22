@@ -40,6 +40,7 @@ else:
     num_check = "dosint have enough numbers"
     Num_fact = 0
 
+#This checks if the password is perfect or if it has problems with it.
 if Num_fact == 1 and up_fact == 1 and low_fact == 1 and length_fact == 1:
     Passed = ". Your password is very sucure!!!"
 else:
