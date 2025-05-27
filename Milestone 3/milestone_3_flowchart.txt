@@ -1,0 +1,22 @@
+
+
+Start
+holding questions and ansers
+input: question1
+desison: 
+    If right then:give postice message and congratulate them
+    and then add +1 to the score
+    else: Tell them they are wong and give them the right answer
+repat this for all questions
+
+if score = 5 then tell them they got 100% and are very smart and froce stop
+    elif score >=3 ask to try again
+        restart: Y or N
+        if N then stop
+        else restart
+    else socre <3 and ask to try agin
+        restart: Y or N
+        if N then stop
+        else restart
+
+
