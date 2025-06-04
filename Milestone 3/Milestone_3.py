@@ -1,25 +1,37 @@
 #storing anser and questions
-#if bum == Right_answer[0]:
+#def is for the retry system
 def Run_quiz():
     score = 0
     Right_answer = ["A", "D", "C", "B", "A"]
     Questions = ["what does Italy make the most of?", "what contory has the oldest University?", "when was  University of Bologna founded",
               "what did Itay event?", "how old is the Roman Colosseum?"]
 
-    print("welcome to my Italy quiz\nInput A, B, C, D for it to regster as the right answer!")
+    print("welcome to my Italy quiz\nInput A, B, C, D for it to regster as the right answer!\nWe do not store any of your answers or how much you got worng")
 
-
-    #questions
-    answer1 = input(" {}\nA: Wine\nB: Chezz\nC: pasta\nD: mac and chezz\n:".format(Questions[0])).upper()
-
+#questions and no space identifyer
+    while True:
+        answer1 = input(" {}\nA: Wine\nB: Chezz\nC: pasta\nD: mac and chezz\n:".format(Questions[0])).upper()
+        if answer1.strip() == "":
+            print("You didn't enter anything, Please choose A, B, C, D.")
+        else:
+            break
     if answer1 == Right_answer[0]:
         print("you got it right, Good boyyyyy :)")
         score += 1
-    else:
+    else: 
         print(" Thats wrong!\n Italy is the largist producer of wine in the World")
 
 
-    answer2 = input(" {}\nA: Brazil\nB: Usa\nC: UK\nD: Italy\n:".format(Questions[1])).upper()
+
+
+
+    while True:
+        answer2 = input(" {}\nA: Brazil\nB: Usa\nC: UK\nD: Italy\n:".format(Questions[1])).upper()
+        if answer2.strip() == "":
+            print("You didn't enter anything, Please choose A, B, C, D.")
+        else:
+            break
+
 
     if answer2 == Right_answer[1]:
         print("Amazing, you got it right!")
@@ -28,7 +40,16 @@ def Run_quiz():
         print(' Thats wrong!\n Italy has the oldest University called "University of Bologna"')
 
 
-    answer3 = input(" {}\nA: 839\nB: 1753\nC: 1088\nD: 1811\n:".format(Questions[2])).upper()
+
+
+
+    while True:
+        answer3 = input(" {}\nA: 839\nB: 1753\nC: 1088\nD: 1811\n:".format(Questions[2])).upper()
+        if answer3.strip() == "":
+            print("You didn't enter anything, Please choose A, B, C, D.")
+        else:
+            break
+
 
 
     if answer3 == Right_answer[2]:
@@ -38,7 +59,16 @@ def Run_quiz():
         print(" Thats wrong!\n University of Bologna was founded in 1088")
 
 
-    answer4 = input(" {}\nA: fish and chips\nB: Eyeglasses\nC: tank\nD: Computer\n:".format(Questions[3])).upper()
+
+
+
+    while True:
+        answer4 = input(" {}\nA: fish and chips\nB: Eyeglasses\nC: tank\nD: Computer\n:".format(Questions[3])).upper()
+        if answer4.strip() == "":
+            print("You didn't enter anything, Please choose A, B, C, D.")
+        else:
+            break
+
 
     if answer4 == Right_answer[3]:
         print("Your knowlage is out of this world!!")
@@ -47,7 +77,15 @@ def Run_quiz():
         print(" Thats wrong!\n Italy invented the eyeglasses!")
 
 
-    answer5 = input(" {}\nA: 2000\nB: 500\nC: 1342\nD: 6969\n:".format(Questions[4])).upper()
+
+
+
+    while True:
+        answer5 = input(" {}\nA: 2000\nB: 500\nC: 1342\nD: 6969\n:".format(Questions[4])).upper()
+        if answer5.strip() == "":
+            print("You didn't enter anything, Please choose A, B, C, D.")
+        else:
+            break
 
     if answer5 == Right_answer[4]:
         print("Thats right!! Your on fire!")
@@ -67,12 +105,12 @@ def Run_quiz():
         print("you got {}/5. There could be room for improvment!\nI know you can do better!".format(score))
     
     return score
-
+#retry system
 while True:
     final_score = Run_quiz()
     if final_score == 5:
         break
-    try_again = input("Do you want to try again? (Y/N): ").upper()
+    try_again = input("Do you want to try again? (Y/N): ").strip().upper()
     if try_again != "Y":
         print("Thanks for playing!")
         break

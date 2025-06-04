@@ -19,4 +19,6 @@ if score = 5 then tell them they got 100% and are very smart and froce stop
         if N then stop
         else restart
 
+Stop
+
 
